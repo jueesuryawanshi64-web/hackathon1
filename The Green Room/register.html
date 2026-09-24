@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register - LeafyLuxe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="name">LeafyLuxe</div>
+        <nav>
+            <ul class="center">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="right">
+            <ul class="right-btn">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><button class="cart-btn">🛒</button></li>
+            </ul>
+        </div>
+    </header>
+    <section class="register-sec">
+        <div class="register-box">
+            <div class="reg-info">
+                <p class="register-text">WELCOME TO KEAFYLUXE</p>
+                <h1>Grow your
+                <span>Little world</span>
+                </h1>
+                <p>Create your leafyluxe account and discover beautiful inddor plants for your home</p>
+                <div class="plant">🌿 🪴 🌱</div>
+            </div>
+            <div class="reg-form">
+                <h2>Create Account</h2>
+                <form id="registerForm">
+                    <div class="info">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+
+                         <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number"required>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password" required>  
+                            
+                        <label for="confirm-password">Confirm Password </label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required>    
+                    </div>
+                    <button type="submit" class="reg-submit">Create Account</button>
+                    <p class="login-text">Already have an account?
+                    <a href="login.html">Login here</a>
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+     <script src="script.js"></script>
+</body>
+</html>

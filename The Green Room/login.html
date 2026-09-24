@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LeafyLuxe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="name">LeafyLuxe</div>
+        <nav>
+            <ul class="center">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="right">
+            <ul class="right-btn">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><button class="cart-btn">🛒</button></li>
+            </ul>
+        </div>
+    </header>
+    <section class="login-sec">
+        <div class="login-box">
+            <p class="login-small"> WELCOME BACK </p>
+            <h1>Welcome to
+                <span>LeafyLuxe</span>
+            </h1>
+            <p class="login-text">
+                Login to continue exploring your little green world.
+            </p>
+            <form id="Loginform">
+                <label for="email">Email</label>
+                <input
+                    type="email" id="email" placeholder="Enter your email" required>
+                <label for="password">Password </label>
+                <input
+                    type="password" id="password" placeholder="Enter your password" required>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <p class="register-text">Don't have an account?
+                <a href="register.html"> Create Account </a>
+            </p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
