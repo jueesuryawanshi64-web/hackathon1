@@ -19,13 +19,14 @@ if (registerForm) {
             phone: phone,
             password: password
         };
-        let users = localStorage.setItem("leafyUser",   JSON.stringify(user));
+        let users = JSON.parse(localStorage.getItem("leafyUsers")) || [];
+        users.push(user);
+        localStorage.setItem("leafyUsers",   JSON.stringify(users));
         alert("Registration successful!");
         window.location.href = "login.html";
     });
 }
 const loginForm = document.getElementById("loginForm");
-
 if (loginForm) {
     loginForm.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -44,5 +45,5 @@ if (loginForm) {
         } else {
             alert("Invalid email or password!");
         }
-    });
+    });    
 }
